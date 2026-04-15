@@ -561,26 +561,3 @@ video {
 .grid {
   display: grid;
 }
-
-.h-1 {
-  height: 0.25rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.text-pink-200 {
-  --tw-text-opacity: 1;
-  color: rgb(251 207 232 / var(--tw-text-opacity, 1));
-}
