@@ -404,7 +404,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
 Remove the inner padding in Chrome and Safari on macOS.
 */
 
-::-webkit-search-decoration {
+::-webkit-search-decoration {     
   -webkit-appearance: none;
 }
 
