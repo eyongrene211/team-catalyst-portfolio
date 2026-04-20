@@ -1,62 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Team Catalyst | Portfolio</title>
-  <!-- Tailwind CSS (offline build output) --  <link href="./dist/output.css" rel="stylesheet">
+  <!-- Tailwind CSS (offline build output) --  <link href="./dist/output.css" rel="stylesheet"> -->
   <!-- Custom CSS (for animations, overrides) -->
   <link rel="stylesheet" href="dist/output.css">
 </head>
-<body >
+<body  >
 
+  
   <!-- ================= HEADER / NAVIGATION ================= -->
   <!-- Task: Build the fixed header with logo, nav links, dark mode toggle, mobile menu -->
-  <header>
-    <!-- Grace Ricky - Hero Section -->
-<section class="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white flex items-center">
-  <!-- HEADER -->
-<header class="w-full bg-b
-<!-- Header / Navigation Bar -->
-<header class="fixed top-0 left-0 right-0 bg-black border-b border-zinc-800 z-50">
-  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+      
+      <!-- Header / Navigation Bar -->
+      <header class="fixed top-0 left-0 right-0   z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+          
+          <!-- Logo -->
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-gradient-to-br from-orange-400 to-yellow-500 rounded-full flex items-center justify-center  font-bold text-2xl shadow-md">
+              B
+            </div>
+           
+          </div>
+          
+          <!-- Navigation Links -->
+          <div class="flex gap-4">
+            <nav class=" hidden md:flex items-center gap-8  text-sm font-medium">
+              <a href="#home" class="hover:text-blue-400 transition-colors">Home</a>
+              <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+              <a href="#experience" class="hover:text-blue-400 transition-colors">Experience</a>
+              <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+            </nav>
+            <!-- theme-toggle-icon -->
+            <div id="theme-toggle-btn" class="hidden relative md:block w-[40px] h-[20px]  bg-[#d1d5db] rounded-full cursor-pointer transition-colors duration-300">
+              <div id="toggle-btn" class="hidden md:block w-[20px] h-[20px] bg-white  rounded-full transform transition-transform duration-300"></div>
+            </div>
+          </div>
+          
+          <!-- Mobile Menu Button (for smaller screens) -->
+          <button onclick="alert('Mobile menu coming soon')" class="md:hidden text-3xl ">
+            ☰
+          </button>
+        </div>
+      </header>
+      
     
-    <!-- Logo -->
-    <div class="flex items-center gap-3">
-      <div class="w-10 h-10 bg-gradient-to-br from-orange-400 to-yellow-500 rounded-full flex items-center justify-center text-black font-bold text-2xl shadow-md">
-        B
-      </div>
-      <!-- Optional: Team name if needed -->
-      <!-- <span class="text-white font-semibold text-lg">Team Catalyst</span> -->
-    </div>
-
-    <!-- Navigation Links -->
-    <nav class="flex items-center gap-8 text-white text-sm font-medium">
-      <a href="#home" class="hover:text-blue-400 transition-colors">Home</a>
-      <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
-      <a href="#experience" class="hover:text-blue-400 transition-colors">Experience</a>
-      <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
-    </nav>
-
-    <!-- Mobile Menu Button (for smaller screens) -->
-    <button onclick="alert('Mobile menu coming soon')" class="md:hidden text-3xl text-white">
-      ☰
-    </button>
-  </div>
-</header>
-         
-  </header>
-
-  <main >
-    <!-- ================= HERO SECTION ================= -->
-    <!-- Task: Build the hero section (greeting, role, short bio, CV button) -->
-    <section >
-      <!-- Your code here -->
-    </section>
-
-
-    <!-- ================= EXPERIENCED WITH (Tech Icons) ================= -->
-    <!-- Task: Build the "Experienced With" section with tech icons or labels -->
+    
+    <main >
+      <!-- Franck - Hero Section -->
+      <!-- ================= HERO SECTION ================= -->
+      <!-- Task: Build the hero section (greeting, role, short bio, CV button) -->
+      <section >
+        <!-- Your code here -->
+      </section>
+      
+      
+      <!-- ================= EXPERIENCED WITH (Tech Icons) ================= -->
+      <!-- Task: Build the "Experienced With" section with tech icons or labels -->
     <section >
       <!-- Your code here -->
     </section>
