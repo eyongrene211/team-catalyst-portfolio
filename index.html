@@ -1,67 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team Catalyst | Portfolio</title>
-  <!-- Tailwind CSS (offline build output) -->
-  <link href="./dist/output.css" rel="stylesheet">
-  <!-- Custom CSS (for animations, overrides) -->
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bryan – Full-Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body >
+<body>
 
-  <!-- ================= HEADER / NAVIGATION ================= -->
-  <!-- Task: Build the fixed header with logo, nav links, dark mode toggle, mobile menu -->
-  <header>
-    <!-- Your code here -->
-  </header>
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero">
 
-  <main >
-    <!-- ================= HERO SECTION ================= -->
-    <!-- Task: Build the hero section (greeting, role, short bio, CV button) -->
-    <section >
-      <!-- Your code here -->
-    </section>
+    <!-- Photo de profil : remplace src par ta propre image -->
+    <div class="hero__avatar">
+      <img src="assets/images/Image1.jpg" alt="Photo de Bryan" />
+    </div>
 
+    <!-- Texte principal -->
+    <h1 class="hero__title">
+      Hi 👋, I'm <span class="highlight">Bryan</span><br />
+      A full-stack developer from<br />
+      Cameroon 🇨🇲.
+    </h1>
 
-    <!-- ================= EXPERIENCED WITH (Tech Icons) ================= -->
-    <!-- Task: Build the "Experienced With" section with tech icons or labels -->
-    <section >
-      <!-- Your code here -->
-    </section>
+    <!-- Description -->
+    <p class="hero__description">
+      Full-stack web developer with hands-on experience building modern, scalable
+      applications using the MERN stack, React, Next.js, and Express. Skilled in
+      building both frontend interfaces and backend APIs, with a strong focus on
+      clean architecture, performance, scalability, and security.
+    </p>
 
-    <!-- ================= PROJECTS SECTION ================= -->
-    <!-- Task: Build the projects grid (each project card: title, description, links) -->
-    <section >
-      <!-- Your code here -->
-    </section>
+    <!-- Bouton -->
+    <a href="bryan.pdf" download class="hero__btn">Download CV</a>
 
-    <!-- ================= EXPERIENCE SECTION ================= -->
-    <!-- Task: Build the experience section (job timeline, descriptions) -->
-    <section >
-      <!-- Your code here -->
-    </section>
+    <!-- Technologies -->
+    <div class="hero__tech">
+      <p class="hero__tech-label">EXPERIENCED WITH</p>
+      <div class="hero__tech-icons">
+        <img src="assets/icons/js-icon.png" alt="javascript">
+      </div>
+      <div class="hero__tech-icons">
+        <img src="assets/icons/react-icon.png" alt="react">
+      </div>
+      <div class="hero__tech-icons">
+        <img src="assets/icons/nextjs-icon.png" alt="next.js">
+      </div>
+      <div class="hero__tech-icons">
+        <img src="assets/icons/ts-icon.png" alt="typescript">
+      </div>
+      <div class="hero__tech-icons">
+        <img src="assets/icons/node.js-icon.png" alt="node.js">
+      </div>
+      <div class="hero__tech-icons">
+        <img src="assets/icons/expressjs-icon.png" alt="express">
+      </div>
+    </div>
 
+  </section>
 
-    <!-- ================= CONTACT SECTION ================= -->
-    <!-- Task: Build the contact section with a form (name, email, message) and contact info -->
-    <section >
-      <!-- Your code here -->
-    </section>
-  </main>
-
-
-  <!-- ================= FOOTER ================= -->
-  <!-- Task: Build the footer (copyright, social links, back-to-top button) -->
-
-  <footer>
-    <!-- Your code here -->
-  </footer>
-
-
-
-  <!-- JavaScript for dark mode, mobile menu, form validation, smooth scroll, etc. -->
-  <script src="js/main.js"></script>
 </body>
 </html>
