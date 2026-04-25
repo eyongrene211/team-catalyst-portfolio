@@ -1,159 +1,597 @@
 <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bryan – Full-Stack Developer</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
 
-  <!-- ========== HERO SECTION ========== -->
-  <section class="hero">
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Catalyst | Portfolio</title>
+    <!-- Tailwind CSS (offline build output) --  <link href="./dist/output.css" rel="stylesheet"> -->
+    <!-- Custom CSS (for animations, overrides) -->
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ================= HEADER / NAVIGATION ================= -->
+    <!-- Task: Build the fixed header with logo, nav links, dark mode toggle, mobile menu -->
 
-    <!-- Photo de profil : remplace src par ta propre image -->
-    <div class="hero__avatar">
-      <img src="assets/images/Image1.jpg" alt="Photo de Bryan" />
-    </div>
-
-    <!-- Texte principal -->
-    <h1 class="hero__title">
-      Hi 👋, I'm <span class="highlight">Bryan</span><br />
-      A full-stack developer from<br />
-      Cameroon 🇨🇲.
-    </h1>
-
-    <!-- Description -->
-    <p class="hero__description">
-      Full-stack web developer with hands-on experience building modern, scalable
-      applications using the MERN stack, React, Next.js, and Express. Skilled in
-      building both frontend interfaces and backend APIs, with a strong focus on
-      clean architecture, performance, scalability, and security.
-    </p>
-
-    <!-- Bouton -->
-    <a href="Bryan_CV.docx" download class="hero__btn">Download CV</a>
-
-    <!-- Technologies -->
-    <div class="hero__tech">
-      <p class="hero__tech-label">EXPERIENCED WITH</p>
-      <div class="hero__tech-icons">
-        <img src="assets/icons/js-icon.png" alt="javascript">
-      </div>
-      <div class="hero__tech-icons">
-        <img src="assets/icons/react-icon.png" alt="react">
-      </div>
-      <div class="hero__tech-icons">
-        <img src="assets/icons/nextjs-icon.png" alt="next.js">
-      </div>
-      <div class="hero__tech-icons">
-        <img src="assets/icons/ts-icon.png" alt="typescript">
-      </div>
-      <div class="hero__tech-icons">
-        <img src="assets/icons/node.js-icon.png" alt="node.js">
-      </div>
-      <div class="hero__tech-icons">
-        <img src="assets/icons/expressjs-icon.png" alt="express">
-      </div>
-    </div>
-
-  </section>
-
-<html lang="en"  class="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Team Catalyst | Portfolio</title>
-  <!-- Tailwind CSS (offline build output) --  <link href="./dist/output.css" rel="stylesheet"> -->
-  <!-- Custom CSS (for animations, overrides) -->
-  <link rel="stylesheet" href="dist/output.css">
-</head>
-<body  >
-
-  
-  <!-- ================= HEADER / NAVIGATION ================= -->
-  <!-- Task: Build the fixed header with logo, nav links, dark mode toggle, mobile menu -->
-      
-      <!-- Header / Navigation Bar -->
-      <header class="fixed top-0 left-0 right-0   z-50">
-        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-          
-          <!-- Logo -->
-          <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-gradient-to-br from-orange-400 to-yellow-500 rounded-full flex items-center justify-center  font-bold text-2xl shadow-md">
-              B
-            </div>
-           
+    <!-- Header / Navigation Bar -->
+    <header
+      class="fixed top-0 left-0 right-0 z-50 w-full flex   px-4 sm:px-[5vw] md:px-[7vw] max-w-7xl mx-auto bg-background/80 shadow-md backdrop-blur-lg py-3 md:py-4"
+    >
+      <div class="w-full mx-auto px-6 py-5 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center gap-3">
+          <div
+            class="w-10 h-10 bg-gradient-to-br from-orange-400 to-yellow-500 rounded-full flex items-center justify-center font-bold text-2xl shadow-md"
+          >
+            B
           </div>
-          
-          <!-- Navigation Links -->
-          <div class="flex gap-4">
-            <nav class=" hidden md:flex items-center gap-8  text-sm font-medium">
-              <a href="#home" class="hover:text-blue-400 transition-colors">Home</a>
-              <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
-              <a href="#experience" class="hover:text-blue-400 transition-colors">Experience</a>
-              <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
-            </nav>
-            <!-- theme-toggle-icon -->
-            <div id="theme-toggle-btn" class="hidden relative md:block w-[40px] h-[20px]  bg-[#d1d5db] rounded-full cursor-pointer transition-colors duration-300">
-              <div id="toggle-btn" class="hidden md:block w-[20px] h-[20px] bg-white  rounded-full transform transition-transform duration-300"></div>
-            </div>
-          </div>
-          
-          <!-- Mobile Menu Button (for smaller screens) -->
-          <button onclick="alert('Mobile menu coming soon')" class="md:hidden text-3xl ">
-            ☰
-          </button>
         </div>
-      </header>
-      
-    
-    
-    <main >
+
+        <!-- Navigation Links -->
+        <div class="flex gap-4">
+          <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+            <a href="#home" class="hover:text-blue-400 transition-colors"
+              >Home</a
+            >
+            <a href="#projects" class="hover:text-blue-400 transition-colors"
+              >Projects</a
+            >
+            <a href="#experience" class="hover:text-blue-400 transition-colors"
+              >Experience</a
+            >
+            <a href="#contact" class="hover:text-blue-400 transition-colors"
+              >Contact</a
+            >
+          </nav>
+          <!-- theme-toggle-icon -->
+          <div
+            id="theme-toggle-btn"
+            class="hidden relative md:block w-[40px] h-[20px] bg-[#d1d5db] rounded-full cursor-pointer transition-colors duration-300"
+          >
+            <div
+              id="toggle-btn"
+              class="hidden md:block w-[20px] h-[20px] bg-white rounded-full transform transition-transform duration-300"
+            ></div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Button (for smaller screens) -->
+        <button
+          onclick="alert('Mobile menu coming soon')"
+          class="md:hidden text-3xl"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main
+      class="mt-36 w-full px-4 sm:px-[5vw] md:px-[7vw] max-w-[1000px] mx-auto"
+    >
       <!-- Franck - Hero Section -->
       <!-- ================= HERO SECTION ================= -->
-      <!-- Task: Build the hero section (greeting, role, short bio, CV button) -->
-      <section >
-        <!-- Your code here -->
+      <!-- Task: Build the hero/home section (greeting, role, short bio, CV button) -->
+      <section
+        id="home"
+        class="flex flex-col items-center justify-center gap-9"
+      >
+        <!-- Photo de profil : remplace src par ta propre image -->
+        <div class="hero__avatar">
+          <img src="assets/images/Image1.jpg" alt="Photo de Bryan" />
+        </div>
+
+        <!-- Texte principal -->
+        <h1 class="hero__title">
+          Hi 👋, I'm <span class="highlight">Bryan</span><br />
+          A full-stack developer from<br />
+          Cameroon 🇨🇲.
+        </h1>
+
+        <!-- Description -->
+        <p class="hero__description para1-">
+          Full-stack web developer with hands-on experience building modern,
+          scalable applications using the MERN stack, React, Next.js, and
+          Express. Skilled in building both frontend interfaces and backend
+          APIs, with a strong focus on clean architecture, performance,
+          scalability, and security.
+        </p>
+
+        <!-- Bouton -->
+        <a href="Bryan_CV.docx" download class="hero__btn">Download CV</a>
+
+        <!-- ================= EXPERIENCED WITH (Tech Icons) ================= -->
+        <!-- Task: Build the "Experienced With" section with tech icons or labels -->
+
+        <!-- Technologies -->
+        <div class="hero__tech_icon">
+          <h3 class="text-center text-[20px] uppercase font-bold tracking-wide">
+            <span class="gradient-text .dark-invert-100  from-gray-300 to-gray-500"
+              >Experience With</span
+            >
+          </h3>
+          <ul class="flex invert gap-6 flex-wrap mt-10 justify-center">
+            <li>
+              <img
+                src="assets/icons/js-icon.png"
+                alt="javascript"
+                class="w-[60px] h-[60px]"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/icons/react-icon.png"
+                alt="react"
+                class="w-[60px] h-[60px]"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/icons/nextjs-icon.png"
+                alt="next.js"
+                class="w-[60px] h-[60px]"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/icons/ts-icon.png"
+                alt="typescript"
+                class="w-[60px] h-[60px]"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/icons/node.js-icon.png"
+                alt="node.js"
+                class="w-[60px] h-[60px]"
+              />
+            </li>
+            <li>
+              <img
+                src="assets/icons/expressjs-icon.png"
+                alt="express"
+                class="w-[60px] h-[60px]"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
-      
-      
-      <!-- ================= EXPERIENCED WITH (Tech Icons) ================= -->
-      <!-- Task: Build the "Experienced With" section with tech icons or labels -->
-    <section >
-      <!-- Your code here -->
-    </section>
 
-    <!-- ================= PROJECTS SECTION ================= -->
-    <!-- Task: Build the projects grid (each project card: title, description, links) -->
-    <section >
-      <!-- Your code here -->
-    </section>
+      <!-- ================= PROJECTS SECTION ================= -->
+      <!-- Task: Build the projects grid (each project card: title, description, links) -->
+      <section id="projects" class="mt-32">
+        <h2 class="text-3xl uppercase text-center font-bold tracking-wide">
+          <span class="gradient-text from-red-500 to-orange-400">Projects</span>
+        </h2>
+        <div class="flex flex-wrap gap-2 mt-8 justify-center">
+          <span class="border rounded-full py-1 px-3 text-sm cursor pointer">
+            React</span
+          >
+          <span class="border rounded-full py-1 px-3 text-sm cursor pointer">
+            Socket.io</span
+          >
+          <span class="border rounded-full py-1 px-3 text-sm cursor pointer">
+            Tailwind CSS</span
+          >
+          <span class="border rounded-full py-1 px-3 text-sm cursor pointer">
+            Node.js</span
+          >
+          <span class="border rounded-full py-1 px-3 text-sm cursor pointer">
+            Express.js</span
+          >
+          <span class="border rounded-full py-1 px-3 text-sm cursor pointer">
+            MongoDB</span
+          >
+          <span class="border rounded-full py-1 px-3 text-sm cursor pointer">
+            Javascript</span
+          >
+          <span class="border rounded-full py-1 px-3 text-sm cursor pointer">
+            Typescript</span
+          >
+          <span class="border rounded-full py-1 px-3 text-sm cursor pointer">
+            Next.js</span
+          >
+        </div>
 
-    <!-- ================= EXPERIENCE SECTION ================= -->
-    <!-- Task: Build the experience section (job timeline, descriptions) -->
-    <section >
-      <!-- Your code here -->
-    </section>
+        <div class="mt-8 grid grid-cols-1 gap-4 gap-y-6 sm:grid-cols-2">
+          <!-- project cards  9 cards (4 set on hidden- JS functionality)-->
+          <div class="card-container w-[358px] h-[434px]">
+            <!-- card project image -->
+            <div class="rounded-lg overflow-hidden">
+              <img
+                class="w-[357px] object-cover h-[250px]"
+                loading="lazy"
+                src="assets/images/project1.png"
+                alt="project1"
+              />
+            </div>
+            <!-- card project title and description -->
+            <div class="p-4">
+              <h4 class="text-2xl mb-3">QuickStay</h4>
+              <p class="text-muted-forground mb-3 line-clamp-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                odio sint? Rerum ea mollitia quam?
+              </p>
 
+              <a
+                class="hover:underline text-blue-400 text-sm mr-5"
+                href="/"
+                target="_blank"
+                >View Project</a
+              >
+              <a
+                class="hover:underline text-blue-400 text-sm"
+                href="/"
+                target="_blank"
+                >View on Github</a
+              >
+            </div>
+          </div>
+          <div class="card-container w-[358px] h-[434px]">
+            <!-- card project image -->
+            <div class="rounded-lg overflow-hidden">
+              <img
+                class="w-[357px] object-cover h-[250px]"
+                loading="lazy"
+                src="assets/images/project1.png"
+                alt="project1"
+              />
+            </div>
+            <!-- card project title and description -->
+            <div class="p-4">
+              <h4 class="text-2xl mb-3">QuickStay</h4>
+              <p class="text-muted-forground mb-3 line-clamp-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                odio sint? Rerum ea mollitia quam?
+              </p>
 
-    <!-- ================= CONTACT SECTION ================= -->
+              <a
+                class="hover:underline text-blue-400 text-sm mr-5"
+                href="/"
+                target="_blank"
+                >View Project</a
+              >
+              <a
+                class="hover:underline text-blue-400 text-sm"
+                href="/"
+                target="_blank"
+                >View on Github</a
+              >
+            </div>
+          </div>
+          <div class="card-container w-[358px] h-[434px]">
+            <!-- card project image -->
+            <div class="rounded-lg overflow-hidden">
+              <img
+                class="w-[357px] object-cover h-[250px]"
+                loading="lazy"
+                src="assets/images/project1.png"
+                alt="project1"
+              />
+            </div>
+            <!-- card project title and description -->
+            <div class="p-4">
+              <h4 class="text-2xl mb-3">QuickStay</h4>
+              <p class="text-muted-forground mb-3 line-clamp-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                odio sint? Rerum ea mollitia quam?
+              </p>
 
-    <!-- Task: Build the contact section with a form (name, email, message) and contact info -->
-    <section >
-      <!-- Your code here -->
-    </section>
-  </main>
+              <a
+                class="hover:underline text-blue-400 text-sm mr-5"
+                href="/"
+                target="_blank"
+                >View Project</a
+              >
+              <a
+                class="hover:underline text-blue-400 text-sm"
+                href="/"
+                target="_blank"
+                >View on Github</a
+              >
+            </div>
+          </div>
+          <div class="card-container w-[358px] h-[434px]">
+            <!-- card project image -->
+            <div class="rounded-lg overflow-hidden">
+              <img
+                class="w-[357px] object-cover h-[250px]"
+                loading="lazy"
+                src="assets/images/project1.png"
+                alt="project1"
+              />
+            </div>
+            <!-- card project title and description -->
+            <div class="p-4">
+              <h4 class="text-2xl mb-3">QuickStay</h4>
+              <p class="text-muted-forground mb-3 line-clamp-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                odio sint? Rerum ea mollitia quam?
+              </p>
 
+              <a
+                class="hover:underline text-blue-400 text-sm mr-5"
+                href="/"
+                target="_blank"
+                >View Project</a
+              >
+              <a
+                class="hover:underline text-blue-400 text-sm"
+                href="/"
+                target="_blank"
+                >View on Github</a
+              >
+            </div>
+          </div>
+          <div class="card-container w-[358px] h-[434px]">
+            <!-- card project image -->
+            <div class="rounded-lg overflow-hidden">
+              <img
+                class="w-[357px] object-cover h-[250px]"
+                loading="lazy"
+                src="assets/images/project1.png"
+                alt="project1"
+              />
+            </div>
+            <!-- card project title and description -->
+            <div class="p-4">
+              <h4 class="text-2xl mb-3">QuickStay</h4>
+              <p class="text-muted-forground mb-3 line-clamp-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                odio sint? Rerum ea mollitia quam?
+              </p>
 
-  <!-- ================= FOOTER ================= -->
-  <!-- Task: Build the footer (copyright, social links, back-to-top button) -->
+              <a
+                class="hover:underline text-blue-400 text-sm mr-5"
+                href="/"
+                target="_blank"
+                >View Project</a
+              >
+              <a
+                class="hover:underline text-blue-400 text-sm"
+                href="/"
+                target="_blank"
+                >View on Github</a
+              >
+            </div>
+          </div>
+          <div class="card-container w-[358px] h-[434px]">
+            <!-- card project image -->
+            <div class="rounded-lg overflow-hidden">
+              <img
+                class="w-[357px] object-cover h-[250px]"
+                loading="lazy"
+                src="assets/images/project1.png"
+                alt="project1"
+              />
+            </div>
+            <!-- card project title and description -->
+            <div class="p-4">
+              <h4 class="text-2xl mb-3">QuickStay</h4>
+              <p class="text-muted-forground mb-3 line-clamp-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                odio sint? Rerum ea mollitia quam?
+              </p>
 
-  <footer>
-    <!-- Your code here -->
-  </footer>
+              <a
+                class="hover:underline text-blue-400 text-sm mr-5"
+                href="/"
+                target="_blank"
+                >View Project</a
+              >
+              <a
+                class="hover:underline text-blue-400 text-sm"
+                href="/"
+                target="_blank"
+                >View on Github</a
+              >
+            </div>
+          </div>
+          <div class="card-container w-[358px] h-[434px]">
+            <!-- card project image -->
+            <div class="rounded-lg overflow-hidden">
+              <img
+                class="w-[357px] object-cover h-[250px]"
+                loading="lazy"
+                src="assets/images/project1.png"
+                alt="project1"
+              />
+            </div>
+            <!-- card project title and description -->
+            <div class="p-4">
+              <h4 class="text-2xl mb-3">QuickStay</h4>
+              <p class="text-muted-forground mb-3 line-clamp-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                odio sint? Rerum ea mollitia quam?
+              </p>
 
+              <a
+                class="hover:underline text-blue-400 text-sm mr-5"
+                href="/"
+                target="_blank"
+                >View Project</a
+              >
+              <a
+                class="hover:underline text-blue-400 text-sm"
+                href="/"
+                target="_blank"
+                >View on Github</a
+              >
+            </div>
+          </div>
+          <div class="card-container w-[358px] h-[434px]">
+            <!-- card project image -->
+            <div class="rounded-lg overflow-hidden">
+              <img
+                class="w-[357px] object-cover h-[250px]"
+                loading="lazy"
+                src="assets/images/project1.png"
+                alt="project1"
+              />
+            </div>
+            <!-- card project title and description -->
+            <div class="p-4">
+              <h4 class="text-2xl mb-3">QuickStay</h4>
+              <p class="text-muted-forground mb-3 line-clamp-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                odio sint? Rerum ea mollitia quam?
+              </p>
 
-  <!-- JavaScript for dark mode, mobile menu, form validation, smooth scroll, etc. --><script src="js/main.js"></script>
-</body>
+              <a
+                class="hover:underline text-blue-400 text-sm mr-5"
+                href="/"
+                target="_blank"
+                >View Project</a
+              >
+              <a
+                class="hover:underline text-blue-400 text-sm"
+                href="/"
+                target="_blank"
+                >View on Github</a
+              >
+            </div>
+          </div>
+          <div class="card-container w-[358px] h-[434px]">
+            <!-- card project image -->
+            <div class="rounded-lg overflow-hidden">
+              <img
+                class="w-[357px] object-cover h-[250px]"
+                loading="lazy"
+                src="assets/images/project1.png"
+                alt="project1"
+              />
+            </div>
+            <!-- card project title and description -->
+            <div class="p-4">
+              <h4 class="text-2xl mb-3">QuickStay</h4>
+              <p class="text-muted-forground mb-3 line-clamp-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                odio sint? Rerum ea mollitia quam?
+              </p>
+
+              <a
+                class="hover:underline text-blue-400 text-sm mr-5"
+                href="/"
+                target="_blank"
+                >View Project</a
+              >
+              <a
+                class="hover:underline text-blue-400 text-sm"
+                href="/"
+                target="_blank"
+                >View on Github</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-10">
+          <button
+            class="border boder-primary font-bold py-2 px-6 rounded-full hover:bg-primary hover: text-muted transition-all"
+          >
+            View less
+          </button>
+        </div>
+      </section>
+
+      <!-- ================= EXPERIENCE SECTION ================= -->
+      <!-- Task: Build the experience section (job timeline, descriptions) -->
+      <section id="experience" class="mt-32">
+        <h2 class="text-3xl uppercase text-center font-bold tracking-wide ">
+          <span class="gradient-text  from-green-500 to-orange-400"
+            >Experience</span
+          >
+        </h2>
+        <!-- experience details -->
+        <div class="mt-9 flex flex-col gap-10">
+          <div class="project-exp">
+            <div class="flex justify-between items-center flex-wrap">
+              <h4>
+                <span class="text-2xl sm:text-3xl"
+                  >"Web Developer Instructor at DeBrights' Int.
+                </span>
+              </h4>
+              <p class="text-muted-foreground">Aug 2021 - Present</p>
+            </div>
+            <!-- experience descript -->
+            <p class="text-muted-foreground mt-6 text-justify">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloremque dignissimos, saepe quidem vel voluptas odio beatae
+              sapiente facilis delectus repellat debitis laboriosam nulla sunt
+              praesentium tempore necessitatibus magnam officia accusantium fuga
+              voluptates? Perspiciatis eveniet hic pariatur.
+            </p>
+          </div>
+          <div class="project-exp">
+            <div class="flex justify-between items-center flex-wrap">
+              <h4>
+                <span class="text-2xl sm:text-3xl"
+                  >"Web Developer Instructor at DeBrights' Int.
+                </span>
+              </h4>
+              <p class="text-muted-foreground">Aug 2021 - Present</p>
+            </div>
+            <!-- experience descript -->
+            <p class="text-muted-foreground mt-6 text-justify">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloremque dignissimos, saepe quidem vel voluptas odio beatae
+              sapiente facilis delectus repellat debitis laboriosam nulla sunt
+              praesentium tempore necessitatibus magnam officia accusantium fuga
+              voluptates? Perspiciatis eveniet hic pariatur.
+            </p>
+          </div>
+          <div class="project-exp">
+            <div class="flex justify-between items-center flex-wrap">
+              <h4>
+                <span class="text-2xl sm:text-3xl"
+                  >"Web Developer Instructor at DeBrights' Int.
+                </span>
+              </h4>
+              <p class="text-muted-foreground">Aug 2021 - Present</p>
+            </div>
+            <!-- experience descript -->
+            <p class="text-muted-foreground mt-6 text-justify">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Doloremque dignissimos, saepe quidem vel voluptas odio beatae
+              sapiente facilis delectus repellat debitis laboriosam nulla sunt
+              praesentium tempore necessitatibus magnam officia accusantium fuga
+              voluptates? Perspiciatis eveniet hic pariatur.
+            </p>
+          </div>
+        </div>
+      </section>
+
+     
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <!-- Task: Build the footer (copyright, social links, back-to-top button) -->
+
+    <footer id="contact" class="w-full bg-muted">
+       <!-- ================= CONTACT SECTION ================= -->
+
+      <!-- Task: Build the contact section with a form (name, email, message) and contact info -->
+      <section class="py-20 mt-36 w-full px-4 sm:px-[5vw] md:px-[7vw] max-w-[1000px] mx-auto">
+        <h2 class="text-2xl sm:text-3xl font-bold text-center md:text-left">Contact Me</h2>
+        <p class="text-muted-foreground mt-8 text-center md:text-left">
+          "I'm currently open to new opportunities and actively seeking a full-time position in web development. I'm available for remote roles globally, or hybrid positions based anywhere in Cameroon. With experience in full-stack devleopment, mobile app development, and a strong focus on clean, maintainable code, I'm eager to contribute impactful projects and collaborate with forward-thinking teams."
+        </p>
+        <!-- contact-info -->
+         <div class="mt-10 flex flex-col gap-3 text-center md:text-left">
+          <span class="tracking-wide text-2xl text-muted-foreground">johndoe@gmail.com</span>
+          <span class="tracking-wide text-2xl text-muted-foreground">+237 675 323 853</span>
+         </div>
+         <!-- social media contacts -->
+          <div class="flex gap-3 mt-8 justify-start md:justify-start">
+            <a href="/" target="_blank" class="">
+              <img class="invert" width="40" height="40" src="assets/icons/github-icon.png" alt="github">
+            </a>
+            <a href="/" target="_blank" class="">
+              <img class="invert" width="40" height="40" src="assets/icons/linkedin-icon.png" alt="linkedin"></a>
+          </div>
+      </section>
+    </footer>
+
+    <!-- JavaScript for dark mode, mobile menu, form validation, smooth scroll, etc. -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
