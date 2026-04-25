@@ -4,17 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Team Catalyst | Portfolio</title>
-  <!-- Tailwind CSS (offline build output) -->
-  <link href="./dist/output.css" rel="stylesheet">
+  <!-- Tailwind CSS (offline build output) --  <link href="./dist/output.css" rel="stylesheet">
   <!-- Custom CSS (for animations, overrides) -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="dist/output.css">
 </head>
 <body >
 
   <!-- ================= HEADER / NAVIGATION ================= -->
   <!-- Task: Build the fixed header with logo, nav links, dark mode toggle, mobile menu -->
   <header>
-    <!-- Your code here -->
+    <!-- Grace Ricky - Hero Section -->
+<section class="min-h-screen bg-gradient-to-br from-gray-900 to-black text-white flex items-center">
+  <!-- HEADER -->
+<header class="w-full bg-b
+<!-- Header / Navigation Bar -->
+<header class="fixed top-0 left-0 right-0 bg-black border-b border-zinc-800 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 bg-gradient-to-br from-orange-400 to-yellow-500 rounded-full flex items-center justify-center text-black font-bold text-2xl shadow-md">
+        B
+      </div>
+      <!-- Optional: Team name if needed -->
+      <!-- <span class="text-white font-semibold text-lg">Team Catalyst</span> -->
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="flex items-center gap-8 text-white text-sm font-medium">
+      <a href="#home" class="hover:text-blue-400 transition-colors">Home</a>
+      <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+      <a href="#experience" class="hover:text-blue-400 transition-colors">Experience</a>
+      <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+    </nav>
+
+    <!-- Mobile Menu Button (for smaller screens) -->
+    <button onclick="alert('Mobile menu coming soon')" class="md:hidden text-3xl text-white">
+      ☰
+    </button>
+  </div>
+</header>
+         
   </header>
 
   <main >
@@ -45,6 +75,7 @@
 
 
     <!-- ================= CONTACT SECTION ================= -->
+
     <!-- Task: Build the contact section with a form (name, email, message) and contact info -->
     <section >
       <!-- Your code here -->
@@ -56,12 +87,74 @@
   <!-- Task: Build the footer (copyright, social links, back-to-top button) -->
 
   <footer>
-    <!-- Your code here -->
+<!-- Footer -->
+<footer class="bg-zinc-950 border-t border-zinc-800 py-12 text-zinc-400">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      
+      <!-- Contact Column -->
+      <div>
+        <h3 class="text-white text-xl font-semibold mb-4">Contact Me</h3>
+        <p class="mb-6">
+          I'm an experienced full-stack developer. I have built complex websites from start to finish.
+        </p>
+        
+        <div class="space-y-3 text-sm">
+          <p>
+            <a href="mailto:graciousricky@gmail.com" class="hover:text-white transition">
+              📧 graciousricky@gmail.com
+            </a>
+          </p>
+         
+ <p>
+            <a href="tel:+1227056349225" class="hover:text-white transition">
+              📞 +122 7056 349 225
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Quick Links / Check me out -->
+      <div>
+        <h4 class="text-white text-lg font-medium mb-4">Check me out</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#projects" class="hover:text-white transition">Projects</a></li>
+          <li><a href="#experience" class="hover:text-white transition">Experience</a></li>
+          <li><a href="#about" class="hover:text-white transition">About Me</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Links -->
+      <div>
+        <h4 class="text-white text-lg font-medium mb-4">Connect with me</h4>
+        <div class="flex gap-6">
+          <a href="https://github.com/Grace-ricky" target="_blank" class="hover:text-white transition">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="hover:text-white transition">
+            LinkedIn
+          </a>
+          <!-- Add more: Twitter/X, Instagram, etc. -->
+        </div>
+        
+        <!-- Optional: Real icons (if you add images or use heroicons later) -->
+        <!-- For now using text; you can replace with img tags if you have icons -->
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="mt-12 pt-8 border-t border-zinc-800 text-xs flex flex-col md:flex-row justify-between items-center gap-4">
+      <p>© 2026 Grace Ricky. All Rights Reserved.</p>
+      <p>
+        Made with ❤️ for <span class="text-blue-400">Team Catalyst</span>
+      </p>
+      <a href="#" class="hover:text-white transition">Privacy Policy</a>
+    </div>
+  </div>
+</footer>    <!-- Your code here -->
   </footer>
 
 
-
-  <!-- JavaScript for dark mode, mobile menu, form validation, smooth scroll, etc. -->
-  <script src="js/main.js"></script>
+  <!-- JavaScript for dark mode, mobile menu, form validation, smooth scroll, etc. --><script src="js/main.js"></script>
 </body>
 </html>
