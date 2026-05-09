@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <title>Theme Toggler</title>
+  <style>
+    /* Base (light) styles */
+    body {
+      background: #fff;
+      color: #222;
+      transition: background 0.3s, color 0.3s;
+    }
+    .card {
+      border: 2px solid #ccc;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 8px;
+    }
+
+    /* Dark theme styles – activated when <html> has class "dark" */
+    html.dark body {
+      background: #1a1a1a;
+      color: #f0f0f0;
+    }
+    html.dark .card {
+      /* border-color: #444; */
+      background: #2a2a2a;
+    }
+
+    button {
+      cursor: pointer;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+  <button id="themeToggle">Switch to Dark Mode</button>
+
+  <div class="card">
+    <h2>Hello, Visitor</h2>
+    <p>This is a card whose style changes with the theme.</p>
+  </div>
+
+  <script>
+    // Grab elements
+    const htmlElement = document.documentElement; // the <html> element
+    const toggleBtn = document.getElementById('themeToggle');
+
+    // Add click listener
+    toggleBtn.addEventListener('click', () => {
+      // Toggle the 'dark' class on <html>
+      const isNowDark = htmlElement.classList.toggle('dark');
+
+      // Update button text based on new state
+      if (isNowDark) {
+        toggleBtn.textContent = 'Switch to Light Mode';
+      } else {
+        toggleBtn.textContent = 'Switch to Dark Mode';
+      }
+
+      // Optional: update data-theme attribute for clarity
+      htmlElement.setAttribute('data-theme', isNowDark ? 'dark' : 'light');
+    });
+  </script>
+</body>
+</html>

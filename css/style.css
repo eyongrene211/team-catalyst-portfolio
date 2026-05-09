@@ -37,6 +37,14 @@
   --muted: #262626;
 }
 
+.more-projects{
+  display: none;
+}
+.more-projects.visible {
+  display: grid;
+  
+}
+
 /* Overriding global base */
 @layer base {
   * {
